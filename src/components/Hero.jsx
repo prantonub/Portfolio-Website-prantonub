@@ -66,7 +66,7 @@ export default function Hero() {
               className="font-inter text-4xl sm:text-5xl lg:text-6xl font-bold text-cyber-text leading-tight mb-3"
             >
               Hi, I'm{' '}
-              <span className="gradient-text">Md Tauhidul Islam Pranto</span>
+              <span className="gradient-text">Tauhidul Islam Pranto</span>
             </motion.h1>
 
             {/* Animated role */}
@@ -193,7 +193,7 @@ export default function Hero() {
                 <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-gradient-to-br from-cyber-cyan/20 to-cyber-purple/20 border-2 border-cyber-cyan/30 shadow-cyber">
                   <img
                     src={prantoImg}
-                    alt="Md Tauhidul Islam Pranto"
+                    alt="Tauhidul Islam Pranto"
                     className="w-full h-full object-cover object-top scale-110"
                     style={{ mixBlendMode: 'normal' }}
                   />

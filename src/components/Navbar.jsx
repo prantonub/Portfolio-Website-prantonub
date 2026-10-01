@@ -64,7 +64,7 @@ export default function Navbar() {
                 <RiCodeSSlashLine className="text-white text-lg" />
               </div>
               <span className="font-inter font-bold text-lg sm:text-xl text-cyber-text group-hover:gradient-text transition-all duration-300">
-                Md Tauhidul Islam Pranto
+                Tauhidul Islam Pranto
               </span>
             </button>
 

@@ -33,7 +33,7 @@ export default function Footer() {
                 <RiCodeSSlashLine className="text-white text-lg" />
               </div>
               <span className="font-inter font-bold text-lg text-cyber-text">
-                Md Tauhidul Islam Pranto
+                Tauhidul Islam Pranto
               </span>
             </div>
             <p className="text-cyber-muted font-body text-sm leading-relaxed max-w-xs">
@@ -82,7 +82,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-cyber-muted text-sm font-body">
-            © {new Date().getFullYear()} Md Tauhidul Islam Pranto. All rights reserved.
+            © {new Date().getFullYear()} Tauhidul Islam Pranto. All rights reserved.
           </p>
         </div>
       </div>

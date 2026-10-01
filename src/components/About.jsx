@@ -11,7 +11,7 @@ const highlights = [
 ]
 
 const infoItems = [
-  { label: 'Name', value: 'Md Tauhidul Islam Pranto' },
+  { label: 'Name', value: 'Tauhidul Islam Pranto' },
   { label: 'Degree', value: 'BSc in CSE' },
   { label: 'University', value: 'Northern University Bangladesh' },
   { label: 'Location', value: 'Dhaka, Bangladesh' },
@@ -61,7 +61,7 @@ export default function About() {
             </h3>
             <div className="space-y-4 text-cyber-subtle font-body leading-relaxed">
               <p>
-                I'm <span className="text-cyber-text font-medium">Md Tauhidul Islam Pranto</span>, a
+                I'm <span className="text-cyber-text font-medium">Tauhidul Islam Pranto</span>, a
                 Full Stack Developer from Dhaka, Bangladesh. I'm currently pursuing my BSc in Computer
                 Science and Engineering (July 2023 – December 2026) from Northern University Bangladesh,
                 where I discovered my passion for crafting beautiful web interfaces.

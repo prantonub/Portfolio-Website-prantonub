@@ -1,6 +1,6 @@
-# 🚀 Md Tauhidul Islam Pranto's Portfolio — React + Vite + Tailwind CSS
+# 🚀 Tauhidul Islam Pranto's Portfolio — React + Vite + Tailwind CSS
 
-A modern, responsive portfolio website for **Md Tauhidul Islam Pranto**, Frontend Developer.
+A modern, responsive portfolio website for **Tauhidul Islam Pranto**, Frontend Developer.
 
 ---
 
