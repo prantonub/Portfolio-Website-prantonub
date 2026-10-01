@@ -77,19 +77,10 @@ export default function Hero() {
               className="text-2xl sm:text-3xl font-inter font-semibold text-cyber-subtle mb-6 h-12"
             >
               <TypeAnimation
-                sequence={[
-                  'Full Stack Developer',
-                  2000,
-                  'React Developer',
-                  2000,
-                  'UI/UX Enthusiast',
-                  2000,
-                  'JavaScript Developer',
-                  2000,
-                ]}
+                sequence={['Full Stack Developer']}
                 wrapper="span"
                 speed={50}
-                repeat={Infinity}
+                preRenderFirstString={false}
                 className="text-cyber-cyan-light"
               />
             </motion.div>
