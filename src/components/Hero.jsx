@@ -5,9 +5,9 @@ import { HiLocationMarker } from 'react-icons/hi'
 import prantoImg from '../assets/pranto.png'
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com/', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { icon: FiFacebook, href: 'https://facebook.com/', label: 'Facebook' },
+  { icon: FiGithub, href: 'https://github.com/prantonub', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/pranto-nub/', label: 'LinkedIn' },
+  { icon: FiFacebook, href: 'https://www.facebook.com/pranto.nub/', label: 'Facebook' },
 ]
 
 const stats = [
@@ -63,10 +63,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="font-inter text-5xl sm:text-6xl lg:text-7xl font-bold text-cyber-text leading-tight mb-3"
+              className="font-inter text-4xl sm:text-5xl lg:text-6xl font-bold text-cyber-text leading-tight mb-3"
             >
               Hi, I'm{' '}
-              <span className="gradient-text">Pranto</span>
+              <span className="gradient-text">Md Tauhidul Islam Pranto</span>
             </motion.h1>
 
             {/* Animated role */}
@@ -78,7 +78,7 @@ export default function Hero() {
             >
               <TypeAnimation
                 sequence={[
-                  'Frontend Developer',
+                  'Full Stack Developer',
                   2000,
                   'React Developer',
                   2000,
@@ -200,25 +200,6 @@ export default function Hero() {
                   {/* Overlay gradient at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-cyber-navy/60 to-transparent" />
                 </div>
-
-                {/* Floating tech badges */}
-                <motion.div
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-                  className="absolute -right-4 top-8 px-3 py-2 bg-cyber-card border border-cyber-border rounded-xl shadow-card flex items-center gap-2"
-                >
-                  <span className="text-lg">⚛️</span>
-                  <span className="text-xs font-body font-medium text-cyber-text">React Dev</span>
-                </motion.div>
-
-                <motion.div
-                  animate={{ y: [0, 8, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                  className="absolute -left-4 bottom-12 px-3 py-2 bg-cyber-card border border-cyber-border rounded-xl shadow-card flex items-center gap-2"
-                >
-                  <span className="text-lg">🚀</span>
-                  <span className="text-xs font-body font-medium text-cyber-text">Fresher</span>
-                </motion.div>
               </motion.div>
             </div>
           </motion.div>

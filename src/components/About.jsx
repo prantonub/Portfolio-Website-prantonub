@@ -15,7 +15,7 @@ const infoItems = [
   { label: 'Degree', value: 'BSc in CSE' },
   { label: 'University', value: 'Northern University Bangladesh' },
   { label: 'Location', value: 'Dhaka, Bangladesh' },
-  { label: 'Email', value: 'pranto@example.com' },
+  { label: 'Email', value: 'pranto.nub.cse@gmail.com' },
   { label: 'Status', value: 'Open to Opportunities' },
 ]
 
@@ -56,15 +56,15 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <h3 className="font-inter text-2xl font-bold text-cyber-text mb-6">
-              Frontend Developer &{' '}
+              Full Stack Developer &{' '}
               <span className="gradient-text">UI Enthusiast</span>
             </h3>
             <div className="space-y-4 text-cyber-subtle font-body leading-relaxed">
               <p>
-                I'm <span className="text-cyber-text font-medium">Md Tauhidul Islam Pranto</span>, a fresh
-                Frontend Developer from Dhaka, Bangladesh. I recently completed my BSc in Computer Science
-                and Engineering from Northern University Bangladesh, where I discovered my passion for
-                crafting beautiful web interfaces.
+                I'm <span className="text-cyber-text font-medium">Md Tauhidul Islam Pranto</span>, a
+                Full Stack Developer from Dhaka, Bangladesh. I'm currently pursuing my BSc in Computer
+                Science and Engineering (July 2023 – December 2026) from Northern University Bangladesh,
+                where I discovered my passion for crafting beautiful web interfaces.
               </p>
               <p>
                 I specialize in building responsive, accessible, and visually appealing web applications

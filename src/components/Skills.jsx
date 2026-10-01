@@ -13,13 +13,34 @@ const skillCategories = [
     ],
   },
   {
-    title: 'Frameworks & Tools',
+    title: 'Frontend Frameworks',
     color: 'purple',
     skills: [
+      { name: 'Next.js (Currently Working)', level: 75, icon: '▲' },
+      { name: 'TypeScript', level: 65, icon: '📘' },
       { name: 'Tailwind CSS', level: 85, icon: '🌊' },
-      { name: 'Firebase', level: 65, icon: '🔥' },
-      { name: 'Git & GitHub', level: 72, icon: '🐙' },
       { name: 'Vite / CRA', level: 70, icon: '⚡' },
+      { name: 'Firebase', level: 65, icon: '🔥' },
+    ],
+  },
+  {
+    title: 'Backend & Databases',
+    color: 'cyan',
+    skills: [
+      { name: 'Node.js', level: 75, icon: '🟢' },
+      { name: 'Express.js', level: 70, icon: '⚙️' },
+      { name: 'MongoDB', level: 70, icon: '🍃' },
+      { name: 'PostgreSQL', level: 60, icon: '🐘' },
+    ],
+  },
+  {
+    title: 'Tools & DevOps',
+    color: 'purple',
+    skills: [
+      { name: 'Docker', level: 55, icon: '🐳' },
+      { name: 'CI/CD', level: 50, icon: '🔄' },
+      { name: 'Git & GitHub', level: 72, icon: '🐙' },
+      { name: 'npm', level: 70, icon: '📦' },
     ],
   },
 ]
@@ -28,8 +49,16 @@ const techIcons = [
   { name: 'HTML5', bg: '#E34F26', icon: '🌐' },
   { name: 'CSS3', bg: '#1572B6', icon: '🎨' },
   { name: 'JavaScript', bg: '#F7DF1E', icon: '⚡' },
+  { name: 'TypeScript', bg: '#3178C6', icon: '📘' },
   { name: 'React', bg: '#61DAFB', icon: '⚛️' },
+  { name: 'Next.js', bg: '#000000', icon: '▲' },
   { name: 'Tailwind', bg: '#38BDF8', icon: '🌊' },
+  { name: 'Node.js', bg: '#339933', icon: '🟢' },
+  { name: 'Express', bg: '#000000', icon: '⚙️' },
+  { name: 'MongoDB', bg: '#47A248', icon: '🍃' },
+  { name: 'PostgreSQL', bg: '#4169E1', icon: '🐘' },
+  { name: 'Docker', bg: '#2496ED', icon: '🐳' },
+  { name: 'CI/CD', bg: '#FF6B6B', icon: '🔄' },
   { name: 'Firebase', bg: '#FFCA28', icon: '🔥' },
   { name: 'Git', bg: '#F05032', icon: '🐙' },
   { name: 'VS Code', bg: '#007ACC', icon: '💻' },
@@ -94,7 +123,7 @@ export default function Skills() {
             Technical <span className="gradient-text">Expertise</span>
           </h2>
           <p className="text-cyber-subtle font-body max-w-xl mx-auto">
-            Technologies and tools I've been working with on my journey as a frontend developer
+            Technologies and tools I've been working with on my journey as a full stack developer
           </p>
         </motion.div>
 
@@ -147,11 +176,11 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 p-6 cyber-border rounded-2xl flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left"
         >
-          <div className="text-4xl">📚</div>
+          <div className="text-4xl">🚀</div>
           <div>
-            <h4 className="font-inter font-semibold text-cyber-text mb-1">Currently Learning</h4>
+            <h4 className="font-inter font-semibold text-cyber-text mb-1">Currently Working</h4>
             <p className="text-cyber-subtle font-body text-sm">
-              TypeScript · Next.js · Node.js · REST APIs · MongoDB — always expanding my stack!
+              Next.js daily · building full stack apps with Node.js, Express, MongoDB, PostgreSQL, Docker & CI/CD — always expanding my stack!
             </p>
           </div>
         </motion.div>

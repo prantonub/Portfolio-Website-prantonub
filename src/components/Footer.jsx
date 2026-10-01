@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiFacebook, FiHeart, FiCode } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiFacebook } from 'react-icons/fi'
 import { RiCodeSSlashLine } from 'react-icons/ri'
 
 const navLinks = [
@@ -11,9 +11,9 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com/', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { icon: FiFacebook, href: 'https://facebook.com/', label: 'Facebook' },
+  { icon: FiGithub, href: 'https://github.com/prantonub', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/pranto-nub/', label: 'LinkedIn' },
+  { icon: FiFacebook, href: 'https://www.facebook.com/pranto.nub/', label: 'Facebook' },
 ]
 
 export default function Footer() {
@@ -32,12 +32,12 @@ export default function Footer() {
               <div className="w-9 h-9 rounded-lg bg-cyber-gradient flex items-center justify-center">
                 <RiCodeSSlashLine className="text-white text-lg" />
               </div>
-              <span className="font-inter font-bold text-xl text-cyber-text">
-                Pranto<span className="text-cyber-cyan">.</span>
+              <span className="font-inter font-bold text-lg text-cyber-text">
+                Md Tauhidul Islam Pranto
               </span>
             </div>
             <p className="text-cyber-muted font-body text-sm leading-relaxed max-w-xs">
-              Frontend Developer from Dhaka, Bangladesh. Building beautiful, functional web experiences with modern technologies.
+              Full Stack Developer from Dhaka, Bangladesh. Building beautiful, functional web experiences with modern technologies.
             </p>
           </div>
 
@@ -74,17 +74,13 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <p className="text-cyber-muted text-sm font-body">pranto@example.com</p>
+            <p className="text-cyber-muted text-sm font-body">pranto.nub.cse@gmail.com</p>
             <p className="text-cyber-muted text-sm font-body">Dhaka, Bangladesh 🇧🇩</p>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-cyber-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-cyber-muted text-sm font-body flex items-center gap-1.5">
-            Made with <FiHeart className="text-rose-400 animate-pulse" size={14} /> & <FiCode className="text-cyber-cyan" size={14} /> by{' '}
-            <span className="gradient-text font-semibold">Pranto</span>
-          </p>
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-cyber-muted text-sm font-body">
             © {new Date().getFullYear()} Md Tauhidul Islam Pranto. All rights reserved.
           </p>

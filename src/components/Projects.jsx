@@ -5,71 +5,71 @@ import { FiGithub, FiExternalLink, FiCode } from 'react-icons/fi'
 const projects = [
   {
     id: 1,
-    title: 'DonateHope',
-    subtitle: 'Donation Platform',
+    title: 'ARZ International',
+    subtitle: 'Study Abroad Consultancy Platform',
     description:
-      'A full-stack donation platform connecting donors with meaningful causes. Features Firebase authentication, real-time database, campaign creation, and secure donation tracking. Users can browse campaigns, donate, and track their contribution history.',
+      'A modern, full-stack study abroad consultancy platform built to help students explore international education opportunities, apply to universities, and connect with professional counselors. The platform also includes a comprehensive admin dashboard for managing applications, inquiries, universities, and website content.',
     image: null,
-    emoji: '❤️',
-    tags: ['React', 'Firebase', 'Tailwind CSS', 'React Router', 'Context API'],
-    github: 'https://github.com/',
-    live: 'https://example.com/',
+    emoji: '🎓',
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'JWT'],
+    github: 'https://github.com/prantonub/ARZ-International',
+    live: 'https://www.arzinternational.net/',
     category: 'Full Stack',
-    gradient: 'from-rose-500/20 to-pink-600/20',
-    accent: '#F43F5E',
+    gradient: 'from-cyan-500/20 to-blue-600/20',
+    accent: '#06B6D4',
     featured: true,
   },
   {
     id: 2,
-    title: 'JobNest',
-    subtitle: 'Job Portal Website',
+    title: 'FinanceHub',
+    subtitle: 'Personal Finance Tracker',
     description:
-      'A responsive job portal where recruiters can post openings and job seekers can filter by category, location, and salary. Includes user auth, application tracking, and a clean recruiter dashboard built with React and Firebase.',
+      'An industry-grade MERN personal finance platform — track income and expenses, set per-category budgets with color-coded alerts, schedule recurring transactions via cron jobs, and explore interactive charts. Includes JWT + Google OAuth authentication, an AI finance chatbot (Groq + Llama 3.3), CSV/PDF reports, and dark mode.',
     image: null,
-    emoji: '💼',
-    tags: ['React', 'Firebase', 'Tailwind CSS', 'React Hook Form', 'Firestore'],
-    github: 'https://github.com/',
-    live: 'https://example.com/',
-    category: 'Web App',
-    gradient: 'from-blue-500/20 to-indigo-600/20',
-    accent: '#3B82F6',
-    featured: true,
-  },
-  {
-    id: 3,
-    title: 'ShopSpark',
-    subtitle: 'E-Commerce UI',
-    description:
-      'A pixel-perfect e-commerce frontend with product listings, cart management, category filtering, wishlist, and search. Features smooth animations, a fully responsive layout, and a polished checkout UI built with React and Context API.',
-    image: null,
-    emoji: '🛍️',
-    tags: ['React', 'Tailwind CSS', 'Context API', 'React Router', 'LocalStorage'],
-    github: 'https://github.com/',
-    live: 'https://example.com/',
-    category: 'Frontend',
-    gradient: 'from-amber-500/20 to-orange-600/20',
-    accent: '#F59E0B',
+    emoji: '💰',
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+    github: 'https://github.com/prantonub/web-development-bootcamp-may-2026',
+    live: 'https://financehub-prantonub.vercel.app/',
+    category: 'Full Stack',
+    gradient: 'from-emerald-500/20 to-teal-600/20',
+    accent: '#10B981',
     featured: false,
   },
   {
-    id: 4,
-    title: 'QuizMaster',
-    subtitle: 'Interactive Quiz App',
+    id: 3,
+    title: 'AI Poster Maker',
+    subtitle: 'AI-Powered Poster Generator',
     description:
-      'A dynamic quiz application with category selection, timed questions, leaderboard, and score animation. Built with vanilla JavaScript and CSS animations — showcasing DOM manipulation, async data fetching, and clean state management.',
+      'A full-stack platform that produces ready-to-print Bangla posters — victory day, tribute, campaign, and festival greetings — from a short form. An AI model suggests styling while the layout is rendered server-side and screenshotted to print-resolution PNG via Puppeteer, keeping Bangla text perfectly spelled. Includes a full admin console.',
     image: null,
-    emoji: '🧠',
-    tags: ['JavaScript', 'HTML5', 'CSS3', 'Open Trivia API', 'LocalStorage'],
-    github: 'https://github.com/',
-    live: 'https://example.com/',
-    category: 'JavaScript',
+    emoji: '🎨',
+    tags: ['Next.js', 'TypeScript', 'Express', 'MongoDB', 'Puppeteer'],
+    github: 'https://github.com/prantonub/AI-Poster-Maker',
+    live: 'https://ai-poster-maker-prantonub.vercel.app',
+    category: 'AI',
     gradient: 'from-violet-500/20 to-purple-600/20',
     accent: '#8B5CF6',
+    featured: true,
+  },
+  {
+    id: 4,
+    title: 'HopeFund BD',
+    subtitle: 'Smart Donation Platform',
+    description:
+      'A region-specific smart donation platform built with Firebase Authentication (email/password + Google sign-in). Donors can support causes with validated amounts, see real-time balance updates, and track donation history per cause — with DaisyUI confirmation modals and a clean, fully responsive interface.',
+    image: null,
+    emoji: '❤️',
+    tags: ['HTML5', 'Tailwind CSS', 'JavaScript', 'Firebase', 'DaisyUI'],
+    github: 'https://github.com/prantonub/HopeFund-BD',
+    live: 'https://hope-fund-bd.vercel.app/',
+    category: 'Frontend',
+    gradient: 'from-rose-500/20 to-pink-600/20',
+    accent: '#F43F5E',
     featured: false,
   },
 ]
 
-const categories = ['All', 'Full Stack', 'Web App', 'Frontend', 'JavaScript']
+const categories = ['All', 'Full Stack', 'AI', 'Frontend']
 
 export default function Projects() {
   const ref = useRef(null)
@@ -98,7 +98,7 @@ export default function Projects() {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-cyber-subtle font-body max-w-xl mx-auto">
-            A showcase of projects I've built while growing as a frontend developer
+            A showcase of projects I've built while growing as a full stack developer
           </p>
         </motion.div>
 
@@ -251,7 +251,7 @@ export default function Projects() {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/"
+            href="https://github.com/prantonub"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl border border-cyber-border text-cyber-subtle hover:text-cyber-cyan hover:border-cyber-cyan font-body font-semibold transition-all duration-300 hover:shadow-cyber"

@@ -6,15 +6,15 @@ const contactInfo = [
   {
     icon: FiMail,
     label: 'Email',
-    value: 'pranto@example.com',
-    href: 'mailto:pranto@example.com',
+    value: 'pranto.nub.cse@gmail.com',
+    href: 'mailto:pranto.nub.cse@gmail.com',
     color: 'text-cyber-cyan',
   },
   {
     icon: FiPhone,
     label: 'Phone',
-    value: '+880 1700-000000',
-    href: 'tel:+8801700000000',
+    value: '+880 1787-771585',
+    href: 'tel:+8801787771585',
     color: 'text-cyber-purple-light',
   },
   {
@@ -27,9 +27,9 @@ const contactInfo = [
 ]
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com/', label: 'GitHub', color: 'hover:text-white hover:border-white' },
-  { icon: FiLinkedin, href: 'https://linkedin.com/', label: 'LinkedIn', color: 'hover:text-blue-400 hover:border-blue-400' },
-  { icon: FiFacebook, href: 'https://facebook.com/', label: 'Facebook', color: 'hover:text-blue-500 hover:border-blue-500' },
+  { icon: FiGithub, href: 'https://github.com/prantonub', label: 'GitHub', color: 'hover:text-white hover:border-white' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/pranto-nub/', label: 'LinkedIn', color: 'hover:text-blue-400 hover:border-blue-400' },
+  { icon: FiFacebook, href: 'https://www.facebook.com/pranto.nub/', label: 'Facebook', color: 'hover:text-blue-500 hover:border-blue-500' },
 ]
 
 export default function Contact() {
@@ -94,7 +94,7 @@ export default function Contact() {
                   Let's Build Something Amazing
                 </h3>
                 <p className="text-white/80 font-body text-sm leading-relaxed">
-                  I'm actively looking for frontend developer roles. If you have an opportunity
+                  I'm actively looking for full stack developer roles. If you have an opportunity
                   or just want to chat, feel free to reach out!
                 </p>
               </div>

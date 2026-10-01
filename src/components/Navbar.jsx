@@ -63,8 +63,8 @@ export default function Navbar() {
               <div className="w-9 h-9 rounded-lg bg-cyber-gradient flex items-center justify-center">
                 <RiCodeSSlashLine className="text-white text-lg" />
               </div>
-              <span className="font-inter font-bold text-xl text-cyber-text group-hover:gradient-text transition-all duration-300">
-                Pranto<span className="text-cyber-cyan">.</span>
+              <span className="font-inter font-bold text-lg sm:text-xl text-cyber-text group-hover:gradient-text transition-all duration-300">
+                Md Tauhidul Islam Pranto
               </span>
             </button>
 

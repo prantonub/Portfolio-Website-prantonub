@@ -1,4 +1,4 @@
-# 🚀 Pranto's Portfolio — React + Vite + Tailwind CSS
+# 🚀 Md Tauhidul Islam Pranto's Portfolio — React + Vite + Tailwind CSS
 
 A modern, responsive portfolio website for **Md Tauhidul Islam Pranto**, Frontend Developer.
 
@@ -159,7 +159,3 @@ npm run build && npm run deploy
   "react-type-animation": "^3.2.0"
 }
 ```
-
----
-
-Made with ❤️ by **Md Tauhidul Islam Pranto**

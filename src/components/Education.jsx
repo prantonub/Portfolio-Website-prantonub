@@ -7,11 +7,11 @@ const education = [
     degree: 'BSc in Computer Science & Engineering',
     institution: 'Northern University Bangladesh',
     location: 'Dhaka, Bangladesh',
-    period: '2020 – 2024',
-    status: 'Completed',
-    statusColor: 'text-green-400',
+    period: 'July 2023 – December 2026',
+    status: 'Running',
+    statusColor: 'text-amber-400',
     description:
-      'Completed bachelor\'s degree in Computer Science and Engineering with a strong focus on software development, algorithms, data structures, and web technologies. Active in programming clubs and hackathons.',
+      'Currently pursuing my bachelor\'s degree in Computer Science and Engineering with a strong focus on software development, algorithms, data structures, and web technologies. Active in programming clubs and hackathons.',
     highlights: [
       'Data Structures & Algorithms',
       'Web Development',
@@ -25,9 +25,9 @@ const education = [
   },
   {
     degree: 'Higher Secondary Certificate (HSC)',
-    institution: 'Dhaka College',
-    location: 'Dhaka, Bangladesh',
-    period: '2018 – 2020',
+    institution: 'Ibrahim Khan Govt. College',
+    location: 'Bhuapur, Tangail',
+    period: '2020 – 2022',
     status: 'Completed',
     statusColor: 'text-green-400',
     description:
@@ -39,10 +39,7 @@ const education = [
 ]
 
 const certifications = [
-  { name: 'React - The Complete Guide', issuer: 'Udemy', year: '2024', icon: '⚛️' },
-  { name: 'JavaScript Algorithms & DS', issuer: 'freeCodeCamp', year: '2023', icon: '⚡' },
-  { name: 'Responsive Web Design', issuer: 'freeCodeCamp', year: '2023', icon: '🎨' },
-  { name: 'Git & GitHub Crash Course', issuer: 'Udemy', year: '2023', icon: '🐙' },
+  { name: 'Programming Hero — Level 1', issuer: 'Programming Hero', year: 'Completed', icon: '🏆' },
 ]
 
 export default function Education() {
@@ -156,14 +153,14 @@ export default function Education() {
           <h3 className="font-inter text-2xl font-bold text-cyber-text text-center mb-8">
             Certifications & <span className="gradient-text">Courses</span>
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="flex justify-center">
             {certifications.map(({ name, issuer, year, icon }, i) => (
               <motion.div
                 key={name}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
-                className="cyber-border rounded-xl p-5 text-center hover:shadow-cyber transition-all duration-300 hover:scale-105"
+                className="cyber-border rounded-xl p-5 text-center hover:shadow-cyber transition-all duration-300 hover:scale-105 w-full max-w-xs"
               >
                 <div className="text-3xl mb-3">{icon}</div>
                 <h4 className="font-inter text-sm font-semibold text-cyber-text mb-1 leading-tight">{name}</h4>
