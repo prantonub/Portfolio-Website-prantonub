@@ -2,6 +2,9 @@ import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiFacebook, FiSend, FiCheck } from 'react-icons/fi'
 
+// Get your free access key at https://web3forms.com (sent to your email)
+const WEB3FORMS_ACCESS_KEY = 'b031f939-4745-4c18-a1f0-96987cbd7682'
+
 const contactInfo = [
   {
     icon: FiMail,
@@ -38,19 +41,47 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleChange = (e) => setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  const handleChange = (e) => {
+    setError('')
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
-    // Simulate form submission
-    setTimeout(() => {
+    setError('')
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          from_name: 'Tauhidul Islam Pranto — Portfolio',
+          botcheck: false,
+          ...formData,
+          subject: formData.subject
+            ? `${formData.name} — ${formData.subject}`
+            : `New message from ${formData.name}`,
+        }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setSubmitted(true)
+        setFormData({ name: '', email: '', subject: '', message: '' })
+        setTimeout(() => setSubmitted(false), 4000)
+      } else {
+        setError(data.message || 'Something went wrong. Please try again.')
+      }
+    } catch {
+      setError('Network error. Please check your connection and try again.')
+    } finally {
       setLoading(false)
-      setSubmitted(true)
-      setFormData({ name: '', email: '', subject: '', message: '' })
-      setTimeout(() => setSubmitted(false), 4000)
-    }, 1500)
+    }
   }
 
   return (
@@ -244,6 +275,10 @@ export default function Contact() {
                     </>
                   )}
                 </button>
+
+                {error && (
+                  <p className="text-red-400 text-sm font-body text-center">{error}</p>
+                )}
               </form>
             </div>
           </motion.div>
