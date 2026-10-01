@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { FiGithub, FiExternalLink, FiCode } from 'react-icons/fi'
+import { FiGithub, FiExternalLink, FiCode, FiStar } from 'react-icons/fi'
 import project1Img from '../assets/project-1.png'
 import project2Img from '../assets/project-2.png'
 import project3Img from '../assets/project-3.png'
@@ -157,8 +157,9 @@ export default function Projects() {
 
                 {/* Featured badge */}
                 {project.featured && (
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-cyber-gradient text-white text-xs font-body font-semibold">
-                    ⭐ Featured
+                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-cyber-gradient text-white text-xs font-body font-semibold flex items-center gap-1.5">
+                    <FiStar size={11} className="fill-current" />
+                    Featured
                   </div>
                 )}
 

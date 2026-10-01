@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { HiAcademicCap, HiCalendar, HiLocationMarker, HiBadgeCheck } from 'react-icons/hi'
+import { FaGraduationCap, FaSchool, FaTrophy } from 'react-icons/fa'
 
 const education = [
   {
@@ -20,7 +21,7 @@ const education = [
       'Object-Oriented Programming',
       'Computer Networks',
     ],
-    icon: '🎓',
+    icon: FaGraduationCap,
     gradient: 'from-cyber-cyan/20 to-cyber-purple/20',
   },
   {
@@ -33,13 +34,13 @@ const education = [
     description:
       'Completed HSC in the Science group with strong academic performance in Mathematics, Physics, and Chemistry. Developed foundational analytical and problem-solving skills.',
     highlights: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Information & Communication Technology'],
-    icon: '🏫',
+    icon: FaSchool,
     gradient: 'from-blue-500/20 to-indigo-600/20',
   },
 ]
 
 const certifications = [
-  { name: 'Programming Hero — Level 1', issuer: 'Programming Hero', year: 'Completed', icon: '🏆' },
+  { name: 'Programming Hero — Level 1', issuer: 'Programming Hero', year: 'Completed', icon: FaTrophy },
 ]
 
 export default function Education() {
@@ -86,7 +87,7 @@ export default function Education() {
               >
                 {/* Timeline dot (desktop) */}
                 <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-cyber-gradient border-4 border-cyber-black items-center justify-center z-10 shadow-cyber">
-                  <span className="text-lg">{edu.icon}</span>
+                  <edu.icon size={17} className="text-white" />
                 </div>
 
                 {/* Card */}
@@ -154,7 +155,7 @@ export default function Education() {
             Certifications & <span className="gradient-text">Courses</span>
           </h3>
           <div className="flex justify-center">
-            {certifications.map(({ name, issuer, year, icon }, i) => (
+            {certifications.map(({ name, issuer, year, icon: Icon }, i) => (
               <motion.div
                 key={name}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -162,7 +163,7 @@ export default function Education() {
                 transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
                 className="cyber-border rounded-xl p-5 text-center hover:shadow-cyber transition-all duration-300 hover:scale-105 w-full max-w-xs"
               >
-                <div className="text-3xl mb-3">{icon}</div>
+                <div className="mb-3 flex justify-center"><Icon size={30} className="text-cyber-cyan" /></div>
                 <h4 className="font-inter text-sm font-semibold text-cyber-text mb-1 leading-tight">{name}</h4>
                 <p className="text-cyber-cyan text-xs font-body">{issuer}</p>
                 <p className="text-cyber-muted text-xs font-body mt-1">{year}</p>

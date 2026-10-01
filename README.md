@@ -1,10 +1,10 @@
-# 🚀 Tauhidul Islam Pranto's Portfolio — React + Vite + Tailwind CSS
+# Tauhidul Islam Pranto's Portfolio — React + Vite + Tailwind CSS
 
 A modern, responsive portfolio website for **Tauhidul Islam Pranto**, Frontend Developer.
 
 ---
 
-## 🖥️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -17,7 +17,7 @@ A modern, responsive portfolio website for **Tauhidul Islam Pranto**, Frontend D
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 portfolio/
@@ -47,7 +47,7 @@ portfolio/
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### 1. Install dependencies
 
@@ -77,7 +77,7 @@ npm run preview
 
 ---
 
-## 🎨 Customization
+## Customization
 
 ### Update Personal Info
 - **Name / Bio / Location** → `src/components/About.jsx`
@@ -108,7 +108,7 @@ Place your `resume.pdf` file inside the `/public` folder. The download button in
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Deploy to Vercel (Recommended)
 ```bash
@@ -131,24 +131,24 @@ npm run build && npm run deploy
 
 ---
 
-## 📱 Features
+## Features
 
-- ✅ Fully responsive (mobile, tablet, desktop)
-- ✅ Sticky navbar with active section detection
-- ✅ Animated hero with typing effect
-- ✅ Skill progress bars with animation
-- ✅ Project filter by category
-- ✅ Smooth scroll navigation
-- ✅ Contact form UI with loading/success states
-- ✅ Dark cyber theme with cyan/purple gradients
-- ✅ Framer Motion page animations
-- ✅ Floating elements & glow effects
-- ✅ Back to top button
-- ✅ SEO meta tags
+- Fully responsive (mobile, tablet, desktop)
+- Sticky navbar with active section detection
+- Animated hero with typing effect
+- Skill progress bars with animation
+- Project filter by category
+- Smooth scroll navigation
+- Contact form UI with loading/success states
+- Dark cyber theme with cyan/purple gradients
+- Framer Motion page animations
+- Floating elements & glow effects
+- Back to top button
+- SEO meta tags
 
 ---
 
-## 🔧 Dependencies
+## Dependencies
 
 ```json
 "dependencies": {

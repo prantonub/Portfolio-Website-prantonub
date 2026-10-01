@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiFacebook } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiFacebook, FiMapPin, FiChevronUp } from 'react-icons/fi'
 import { RiCodeSSlashLine } from 'react-icons/ri'
 
 const navLinks = [
@@ -75,7 +75,10 @@ export default function Footer() {
               ))}
             </div>
             <p className="text-cyber-muted text-sm font-body">pranto.nub.cse@gmail.com</p>
-            <p className="text-cyber-muted text-sm font-body">Dhaka, Bangladesh 🇧🇩</p>
+            <p className="text-cyber-muted text-sm font-body flex items-center gap-1.5">
+              <FiMapPin size={13} className="text-cyber-cyan shrink-0" />
+              Dhaka, Bangladesh
+            </p>
           </div>
         </div>
 
@@ -93,7 +96,7 @@ export default function Footer() {
         className="fixed bottom-6 right-6 w-11 h-11 rounded-xl bg-cyber-gradient flex items-center justify-center text-white shadow-cyber hover:scale-110 transition-transform duration-300 z-40"
         aria-label="Back to top"
       >
-        ↑
+        <FiChevronUp size={20} />
       </button>
     </footer>
   )
